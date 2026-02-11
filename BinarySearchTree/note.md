@@ -1,0 +1,1 @@
+## Inorder Traversal of a Binary Search Tree (BST) is sorted in ascending order.
