@@ -1,8 +1,15 @@
 ## Positions:
+### for one-based indexing:
 ### if currentNodeIndex = i
 ### leftChildIndex = 2i
 ### rightChildIndex = 2i + 1
 ### parentIndex = i/2
+
+### for zero-based indexing:
+### if currentNodeIndex = i
+### leftChildIndex = 2i + 1
+### rightChildIndex = 2i + 2
+### parentIndex = (i - 1) / 2
 
 ## Max Heap:
 ### A binary tree where each parent node is greater than or equal to its children.
@@ -35,3 +42,20 @@
 - Index of leaf nodes starts from n/2 + 1 to n, where n is the total number of nodes in the heap.
 - Since leaf nodes do not have children, they do not need to be heapified down during deletion.
 #### To heapify a tree we only need to heapify the non-leaf nodes, which are located from index 1 to n/2.
+
+## Heap Sort:
+### A comparison-based sorting algorithm that uses a binary heap data structure.
+### Steps:
+1. Build a max heap from the input data.
+2. The largest item is stored at the root of the heap. Replace it with the last item of the heap followed by reducing the size of the heap by one. Finally, heapify the root of the tree.
+3. Repeat step 2 while the size of the heap is greater than 1.
+### Time complexity: O(n log n)
+### Space complexity: O(1) (in-place sorting)
+
+## Priority Queue:
+### A data structure that allows for efficient retrieval of the highest (or lowest) priority element.
+### Implemented using a heap, where the priority of elements is determined by their value.
+### Operations:
+1. Insert: O(log n)
+2. Extract Max/Min: O(log n)
+3. Peek Max/Min: O(1)
