@@ -1,0 +1,7 @@
+## Trie
+Trie is a tree-like data structure that is used to store a dynamic set of strings, where the keys are usually strings. It is also known as a prefix tree because it exploits the common prefixes of the strings to save space.
+
+### Basic Operations
+1. **Insertion**: To insert a string into the trie, we start from the root and follow the path corresponding to the characters of the string. If a character does not exist in the current node, we create a new node for that character. Once we reach the end of the string, we mark the current node as a terminal node to indicate that a complete string ends here.
+2. **Search**: To search for a string in the trie, we start from the root and follow the path corresponding to the characters of the string. If we reach a node that does not exist, it means the string is not present in the trie. If we reach the end of the string and the current node is marked as a terminal node, it means the string is present in the trie.
+3. **Deletion**: To delete a string from the trie, we first search for the string. If it is found, we unmark the terminal node. Then we check if the current node has any children. If it does not have any children, we can safely delete the node.

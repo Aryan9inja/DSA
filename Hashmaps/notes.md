@@ -55,3 +55,7 @@ int main() {
 ```
 This code demonstrates basic operations on an unordered_map in C++. It shows how to insert key-value pairs, retrieve values, delete a key-value pair, and check for the existence of a key.
 
+#### Load Factor
+The load factor of a hashmap is defined as the number of entries divided by the size of the hashmap. A high load factor can lead to more collisions, which can degrade performance. To maintain efficient operations, many implementations of hashmaps automatically resize the underlying array when the load factor exceeds a certain threshold (e.g., 0.75). This resizing involves creating a new array and rehashing all existing key-value pairs into the new array, which can be an expensive operation but helps maintain efficient performance in the long run.
+
+## Do problems in DSA 450 to practice hashmaps.
