@@ -20,3 +20,34 @@ Graphs are a data structure that consists of a set of nodes (also called vertice
 The degree of a node in an undirected graph is the number of edges connected to it. In a directed graph, we have:
 - **In-degree**: The number of edges coming into the node.
 - **Out-degree**: The number of edges going out from the node.
+
+### Graph Traversal
+Graph traversal is the process of visiting all the nodes in a graph. The two most common graph traversal algorithms are:
+1. **Depth-First Search (DFS)**: A traversal method that explores as far as possible along each branch before backtracking.
+2. **Breadth-First Search (BFS)**: A traversal method that explores all the neighbors of a node before moving on to the neighbors' neighbors.
+
+### Applications of Graphs
+- **Social Networks**: Representing relationships between people.
+- **Computer Networks**: Representing connections between computers or devices.
+- **Transportation Networks**: Representing roads, railways, or flight routes.
+- **Dependency Graphs**: Representing dependencies between tasks or modules in software development.
+
+### Minimum Spanning Tree
+A minimum spanning tree (MST) is a subset of the edges of a connected, undirected graph that connects all the vertices together without any cycles and with the minimum possible total edge weight. Common algorithms to find an MST include Prim's algorithm and Kruskal's algorithm.
+
+### Prim's Algorithm
+Prim's algorithm is a greedy algorithm that builds the minimum spanning tree by starting from an arbitrary node and repeatedly adding the smallest edge that connects a node in the tree to a node outside the tree until all nodes are included.
+
+### Kruskal's Algorithm
+Kruskal's algorithm is a greedy algorithm that builds the minimum spanning tree by sorting all the edges in non-decreasing order of their weight and adding them one by one to the tree, as long as they do not form a cycle.
+
+### Dijkstra's Algorithm
+Dijkstra's algorithm is a popular algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It works by maintaining a priority queue of nodes to explore, starting from the source node and repeatedly visiting the node with the smallest known distance until the destination node is reached or all reachable nodes have been visited.
+
+### Union-Find (Disjoint Set Union)
+Union-Find is a data structure that keeps track of a set of elements partitioned into disjoint (non-overlapping) subsets. It provides efficient operations for union and find, which are used in algorithms like Kruskal's to manage and merge sets of nodes while building the minimum spanning tree.
+## Path Compression
+Path compression is an optimization technique used in the Union-Find data structure to speed up the find operation. When performing a find operation, path compression flattens the structure of the tree by making every node on the path from a given node to the root point directly to the root. This reduces the time complexity of subsequent find operations, making them nearly constant time.
+
+### Topological Sort
+Topological sort is a linear ordering of the vertices of a directed acyclic graph (DAG) such that for every directed edge (u, v), vertex u comes before vertex v in the ordering. It is commonly used in scheduling tasks, resolving dependencies, and organizing data with hierarchical relationships.
