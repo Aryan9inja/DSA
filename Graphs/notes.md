@@ -51,3 +51,12 @@ Path compression is an optimization technique used in the Union-Find data struct
 
 ### Topological Sort
 Topological sort is a linear ordering of the vertices of a directed acyclic graph (DAG) such that for every directed edge (u, v), vertex u comes before vertex v in the ordering. It is commonly used in scheduling tasks, resolving dependencies, and organizing data with hierarchical relationships.
+
+### Bridge
+A bridge (or cut edge) in a graph is an edge that, if removed, would increase the number of connected components in the graph. In other words, it is an edge that, when removed, disconnects the graph. Bridges are important in network design and analysis, as they represent critical connections that can affect the overall connectivity of the graph.
+
+### Articulation Point
+An articulation point (or cut vertex) in a graph is a vertex that, if removed along with its associated edges, would increase the number of connected components in the graph. In other words, it is a vertex that, when removed, disconnects the graph. Articulation points are important in network design and analysis, as they represent critical nodes that can affect the overall connectivity of the graph.
+
+### Strongly Connected Components
+In a directed graph, a strongly connected component (SCC) is a subgraph where there is a path from every vertex to every other vertex. In other words, for any two vertices u and v in the SCC, there is a directed path from u to v and a directed path from v to u. Strongly connected components are important in understanding the structure of directed graphs and are often used in applications such as analyzing social networks, web page ranking, and optimizing compilers. Tarjan's algorithm is a common method for finding strongly connected components in a directed graph. Kosaraju's algorithm is another method that can be used to find strongly connected components, which involves performing two depth-first searches on the graph.
