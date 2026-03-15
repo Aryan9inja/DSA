@@ -60,3 +60,7 @@ An articulation point (or cut vertex) in a graph is a vertex that, if removed al
 
 ### Strongly Connected Components
 In a directed graph, a strongly connected component (SCC) is a subgraph where there is a path from every vertex to every other vertex. In other words, for any two vertices u and v in the SCC, there is a directed path from u to v and a directed path from v to u. Strongly connected components are important in understanding the structure of directed graphs and are often used in applications such as analyzing social networks, web page ranking, and optimizing compilers. Tarjan's algorithm is a common method for finding strongly connected components in a directed graph. Kosaraju's algorithm is another method that can be used to find strongly connected components, which involves performing two depth-first searches on the graph.
+
+### Bellman-Ford Algorithm
+The Bellman-Ford algorithm is a graph algorithm used to find the shortest paths from a single source vertex to all other vertices in a graph, even if the graph contains edges with negative weights. The algorithm works by relaxing the edges repeatedly, allowing it to handle negative weight edges. However, it is less efficient than Dijkstra's algorithm for graphs without negative weight edges, with a time complexity of O(V * E), where V is the number of vertices and E is the number of edges.
+It can also detect negative weight cycles in the graph, which is a useful feature that Dijkstra's algorithm does not have.
