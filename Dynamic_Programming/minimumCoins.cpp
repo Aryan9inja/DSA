@@ -26,7 +26,7 @@ int memoization(vector<int> &num, int x, vector<int> &dp){
     if(dp[x]!=-1) return dp[x];
 
     for(int i=0;i<num.size();i++){
-        int ans=recursively(num, x-num[i]);
+        int ans=memoization(num, x-num[i],dp);
         if(ans!=INT_MAX){
             // +1 for the newly added coin
             mini=min(mini,ans+1);

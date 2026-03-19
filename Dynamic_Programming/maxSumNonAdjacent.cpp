@@ -18,8 +18,8 @@ int memoization(vector<int> &nums, int n, vector<int> &dp){
 
     if(dp[n]!=-1) return dp[n];
 
-    int incl=recursively(nums, n-2) + nums[n];
-    int excl=recursively(nums, n-1) + 0;
+    int incl=memoization(nums, n-2,dp) + nums[n];
+    int excl=memoization(nums, n-1,dp) + 0;
 
     dp[n]= max(incl, excl);
     return dp[n];
