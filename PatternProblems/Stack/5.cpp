@@ -1,0 +1,31 @@
+// LC 42 - Trapping Rain Water
+#include<bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int trap(vector<int>& height) {
+        int n = height.size();
+
+        stack<int> st;
+
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            while (!st.empty() && height[st.top()] < height[i]) {
+                int curr = height[st.top()];
+                st.pop();
+
+                if (st.empty())
+                    break;
+
+                int w = i - st.top() - 1;
+                int h = min(height[st.top()], height[i]) - curr;
+
+                ans += w * h;
+            }
+            st.push(i);
+        }
+
+        return ans;
+    }
+};
