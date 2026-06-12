@@ -10,4 +10,5 @@ func main() {
 	// TODO
 	// Check custom analyzer
 	fmt.Print(fmt.Sprintf("Checking custom analyzer: %d", 100))
+	fmt.Print(fmt.Sprintf("Checking comment ability: %d", 100))
 }
