@@ -15,6 +15,8 @@ func main() {
 
 	// Test LLM logic that it outputs nothing for no new issue 
 	// as it ignores ast issues and only outputs new issues
+
+	// Test after model fix
 }
 
 // Issues:
