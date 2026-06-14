@@ -7,13 +7,10 @@ import (
 func main() {
 	fmt.Println("Hello, World!")
 	fmt.Println("This is a test program.")
-	// TODO
-	// Check custom analyzer
-	// Testing again after go update
-	fmt.Print(fmt.Sprintf("Checking custom analyzer: %d", 100))
-	fmt.Print(fmt.Sprintf("Checking comment ability: %d", 100))
+	fmt.Printf("Checking custom analyzer: %d", 100)
+	fmt.Printf("Checking comment ability: %d", 100)
 
-	// Test LLM logic that it outputs nothing for no new issue 
+	// Test LLM logic that it outputs nothing for no new issue
 	// as it ignores ast issues and only outputs new issues
 
 	// Test after model fix
