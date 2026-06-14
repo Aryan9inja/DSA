@@ -13,3 +13,7 @@ func main() {
 	fmt.Print(fmt.Sprintf("Checking custom analyzer: %d", 100))
 	fmt.Print(fmt.Sprintf("Checking comment ability: %d", 100))
 }
+
+// Issues:
+// No comment chunking
+// Writing comment on the code already commented
