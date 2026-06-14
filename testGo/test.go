@@ -12,6 +12,9 @@ func main() {
 	// Testing again after go update
 	fmt.Print(fmt.Sprintf("Checking custom analyzer: %d", 100))
 	fmt.Print(fmt.Sprintf("Checking comment ability: %d", 100))
+
+	// Test LLM logic that it outputs nothing for no new issue 
+	// as it ignores ast issues and only outputs new issues
 }
 
 // Issues:
