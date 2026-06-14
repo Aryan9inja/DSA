@@ -14,6 +14,7 @@ func main() {
 	// as it ignores ast issues and only outputs new issues
 
 	// Test after model fix
+	// Retest after model fix
 
 	// Test for a bug
 	// items := []int{10, 20, 30, 40, 50}
@@ -22,7 +23,6 @@ func main() {
 	// 	total += items[i]
 	// }
 	// fmt.Printf("Total: %d", total)
-	
 }
 
 // Issues:
