@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sync"
 )
 
 func main() {
@@ -12,4 +13,6 @@ func main() {
 	for i := 0; i <= len(ints); i++ {
 		fmt.Println("Iteration:", ints[i])
 	}
+
+	mute := sync.Mutex{} // Placeholder for future synchronization logic
 }
