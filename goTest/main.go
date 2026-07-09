@@ -46,3 +46,4 @@ func ProcessData(items []string) {
 		fmt.Println("File opened successfully")
 	}
 }
+// Test again after compiling new binary
