@@ -1,0 +1,13 @@
+version: 1
+analyzer:
+  rules:
+    - name: "error-ignored"
+      enabled: true
+    - name: "fmt-print"
+      enabled: false
+  exclude_paths:
+    - "vendor/**"
+    - "**/*_test.go"
+llm:
+  provider: "gemini"
+  model: "gemini-3.5-flash"
